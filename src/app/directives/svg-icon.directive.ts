@@ -30,8 +30,10 @@ export class SvgIconDirective implements OnChanges, AfterViewInit {
     if (afterViewInit) {
       this.elRef.nativeElement.setAttribute('xmlns', 'http://www.w3.org/2000/svg');
     }
-    this.elRef.nativeElement.setAttribute('width', this.svgSize);
-    this.elRef.nativeElement.setAttribute('height', this.svgSize);
+    if (this.svgSize) {
+      this.elRef.nativeElement.setAttribute('width', this.svgSize);
+      this.elRef.nativeElement.setAttribute('height', this.svgSize);
+    }
     this.elRef.nativeElement.innerHTML = `<use xlink:href="${this.svgFile + '#' + this.icon}"></use>`;
   }
 }
