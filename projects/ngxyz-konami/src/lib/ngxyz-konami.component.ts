@@ -1,19 +1,26 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, HostListener, ViewEncapsulation} from '@angular/core';
+import {DynamicComponentLoader} from './dynamic-loader.service';
+import {DomSanitizer} from '@angular/platform-browser';
 
 @Component({
-  selector: 'lib-ngxyz-konami',
+  selector: 'lib-ngxyz-konami-code',
   template: `
-    <p>
-      ngxyz-konami works!
-    </p>
+    <div class="cheat-message-container">
+      <p class="cheat-message" [innerHTML]="domSanitizer.bypassSecurityTrustHtml(cheat?.message)"></p>
+    </div>
   `,
-  styles: []
+  styleUrls: ['./ngxyz-konami.styles.scss'],
+  encapsulation: ViewEncapsulation.None
 })
-export class NgxyzKonamiComponent implements OnInit {
+export class NgxyzKonamiComponent {
+  cheat: NgxyzKonamiCheat;
 
-  constructor() { }
-
-  ngOnInit() {
+  constructor(private dynamicLoader: DynamicComponentLoader, public domSanitizer: DomSanitizer) {
   }
 
+  @HostListener('click')
+  @HostListener('window:keydown.escape')
+  onClick() {
+    this.dynamicLoader.detachAndDestroy(NgxyzKonamiComponent);
+  }
 }
