@@ -1,6 +1,21 @@
 {
   "name": "ngxyz-c2c",
   "version": "0.0.1",
+  "homepage": "https://ngxyz.github.io/#ngxyz-c2c",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dabalyan/ngxyz/tree/master/projects/ngxyz-c2c"
+  },
+  "licence": "MIT",
+  "keywords": [
+    "angular",
+    "javascript",
+    "typescript",
+    "angular-library",
+    "angular-module",
+    "clipboard",
+    "copy-to-clipboard"
+  ],
   "peerDependencies": {
     "@angular/common": "^8.2.14",
     "@angular/core": "^8.2.14"
