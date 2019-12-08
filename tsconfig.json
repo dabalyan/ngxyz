@@ -17,7 +17,15 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "ngxyz-konami": [
+        "dist/ngxyz-konami"
+      ],
+      "ngxyz-konami/*": [
+        "dist/ngxyz-konami/*"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
