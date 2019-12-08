@@ -1,5 +1,12 @@
-# Ngxyz
+# ngXYZ
+Uncommon Angular Library
 
+## Package List
+- [ngxyz-konami](https://ngxyz.github.io/#ngxyz-konami)
+- [ngxyz-c2c](https://ngxyz.github.io/#ngxyz-c2c)
+- more coming soon :)
+
+# For Contributors / Tinkerers
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.20.
 
 ## Development server
