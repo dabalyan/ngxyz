@@ -7,7 +7,7 @@ $darkest-grey: #111111;
   flex-grow: 1;
   flex-wrap: wrap;
 
-  @media (min-width: 480px) and (max-width: 900px) {
+  @media (min-width: 480px) and (max-width: 950px) {
     flex-direction: column;
   }
 }
@@ -18,6 +18,8 @@ header {
 
 section {
   height: 70vh;
+  min-height: 500px;
+  max-height: 575px;
   width: 420px;
   overflow: hidden;
   border: 2px solid;
