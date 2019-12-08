@@ -1,1 +1,128 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import url('normalize.scss');
+
+$gutter-base: 12px;
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  color: #ffffff;
+  background: #000000;
+  font-family: 'Exo 2', sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+button {
+  background: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.flex {
+  display: flex;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.flex-centered-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.m-0 {
+  margin: 0 !important;
+}
+
+.m {
+  margin: $gutter-base !important;
+}
+
+.mx {
+  margin-left: $gutter-base !important;
+  margin-right: $gutter-base !important;
+}
+
+.my {
+  margin-top: $gutter-base !important;
+  margin-bottom: $gutter-base !important;
+}
+
+.mt {
+  margin-top: $gutter-base !important;
+}
+
+.mb {
+  margin-bottom: $gutter-base !important;
+}
+
+.ml {
+  margin-left: $gutter-base !important;
+}
+
+.mr {
+  margin-right: $gutter-base !important;
+}
+
+.p-0 {
+  padding: 0 !important;
+}
+
+.p {
+  padding: $gutter-base / 2 !important;
+}
+
+.px {
+  padding-left: $gutter-base / 2 !important;
+  padding-right: $gutter-base / 2 !important;
+}
+
+.py {
+  padding-top: $gutter-base / 2 !important;
+  padding-bottom: $gutter-base / 2 !important;
+}
+
+.pt {
+  padding-top: $gutter-base / 2 !important;
+}
+
+.pb {
+  padding-bottom: $gutter-base / 2 !important;
+}
+
+.pl {
+  padding-left: $gutter-base / 2 !important;
+}
+
+.pr {
+  padding-right: $gutter-base / 2 !important;
+}
+
+.white-space-nowrap {
+  white-space: nowrap !important;
+}
