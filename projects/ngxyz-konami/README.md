@@ -1,3 +1,5 @@
+[![npm version](https://badge.fury.io/js/ngxyz-konami.svg)](https://www.npmjs.com/package/ngxyz-konami)
+
 # ngXYZ-Konami
 ##An Angular Module to add Konami Codes (Cheat Codes / Easter Eggs) to your Angular App
  * Inspired by original Konami Cheat Codes

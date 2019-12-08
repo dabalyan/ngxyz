@@ -1,3 +1,5 @@
+[![npm version](https://badge.fury.io/js/ngxyz-c2c.svg)](https://www.npmjs.com/package/ngxyz-c2c)
+
 # ngXYZ-C2C
 ## An Angular Module to copy text to clipboard.
 - Includes a Directive which can be applied directly to the Element whose content (innerText) needs to be copied. 
