@@ -24,6 +24,12 @@
       ],
       "ngxyz-konami/*": [
         "dist/ngxyz-konami/*"
+      ],
+      "ngxyz-c2c": [
+        "dist/ngxyz-c2c"
+      ],
+      "ngxyz-c2c/*": [
+        "dist/ngxyz-c2c/*"
       ]
     }
   },

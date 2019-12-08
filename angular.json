@@ -159,6 +159,41 @@
           }
         }
       }
+    },
+    "ngxyz-c2c": {
+      "projectType": "library",
+      "root": "projects/ngxyz-c2c",
+      "sourceRoot": "projects/ngxyz-c2c/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ngxyz-c2c/tsconfig.lib.json",
+            "project": "projects/ngxyz-c2c/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ngxyz-c2c/src/test.ts",
+            "tsConfig": "projects/ngxyz-c2c/tsconfig.spec.json",
+            "karmaConfig": "projects/ngxyz-c2c/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ngxyz-c2c/tsconfig.lib.json",
+              "projects/ngxyz-c2c/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "ngxyz"
