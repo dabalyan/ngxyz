@@ -1,6 +1,7 @@
 import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
 
+import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
 import {SvgIconDirective} from './directives/svg-icon.directive';
 
@@ -10,7 +11,8 @@ import {SvgIconDirective} from './directives/svg-icon.directive';
     SvgIconDirective
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
