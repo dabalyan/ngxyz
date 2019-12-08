@@ -26,6 +26,19 @@ export class AppComponent implements OnInit {
         <br>A message will also suffice if you don't have a callback.`
     },
     {
+      title: 'Copy to Clipboard',
+      name: 'ngxyz-c2c',
+      version: '0.0.1',
+      npmLink: 'https://www.npmjs.com/package/ngxyz-c2c',
+      githubLink: 'https://github.com/dabalyan/ngxyz/tree/master/projects/ngxyz-c2c',
+      description: `A module to copy text to clipboard.<br><br>
+        - Includes a Directive which copies its HostElement's content on click.<br><br>
+        - Also includes a Service for customised / advanced interaction with the underlying API.
+        <br><br>
+        <b>Try It</b><br>
+        Just click <i style="color: #00d685">npm i ngxyz-c2c</i> box at the top to see it in action.`
+    },
+    {
       title: 'Oops... that\'s all folks.',
       description: 'Soon there wil be more. Hopefully 🙂'
     }

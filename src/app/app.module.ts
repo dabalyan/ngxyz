@@ -6,6 +6,7 @@ import {AppComponent} from './app.component';
 import {SvgIconDirective} from './directives/svg-icon.directive';
 
 import {NgxyzKonamiModule} from 'ngxyz-konami';
+import {NgxyzC2cModule} from 'ngxyz-c2c';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import {NgxyzKonamiModule} from 'ngxyz-konami';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgxyzKonamiModule
+    NgxyzKonamiModule,
+    NgxyzC2cModule
   ],
   providers: [],
   bootstrap: [AppComponent]
