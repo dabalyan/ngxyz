@@ -33,21 +33,21 @@ export class AppModule {
 ``` 
 Using the **Directive**
 ```html
-<p libNgxyzC2c>
+<p ngxyzC2c>
   When you click me, my text gets selected, highlighted and copied into clipboard.
   Look Ma, it just works.
 </p>
 
 or you can use me by another name if you like
 
-<p libNgxyzC2C>
+<p ngxyzC2C>
   When you click me, my text gets selected, highlighted and copied into clipboard.
   Look Ma, this also works.
 </p>
 
 disable animation if you want
 
-<p [libNgxyzC2c]="{animation: false}">
+<p [ngxyzC2c]="{animation: false}">
   When you click me, my text gets selected, highlighted and copied into clipboard.
   It doesn't animate, but it does copy.
 </p>
@@ -55,7 +55,7 @@ disable animation if you want
 or make it pop, with bigger animation-icon,
 just remember to pass a number, it's in pixels by the way
 
-<p [libNgxyzC2c]="{iconSize: 120, iconColor: 'red'}">
+<p [ngxyzC2c]="{iconSize: 120, iconColor: 'red'}">
   When you click me, my text gets selected and copied into clipboard.
   Also you see that BIG RED animation-icon DO YOU?
 </p>
