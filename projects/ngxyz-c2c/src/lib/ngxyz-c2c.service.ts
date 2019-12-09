@@ -29,6 +29,18 @@ export class NgxyzC2cService {
   }
 
   /**
+   * Shorthand proxy for copyTextToClipboard and copyInnerTextToClipboard.
+   * @param target text or target HTMLElement for copying the text or innerText respectively.
+   * @param options NgxyzC2cOptions for copyInnerTextToClipboard, no effect on copyTextToClipboard
+   */
+  c2c(target: string | HTMLElement, options?: NgxyzC2cOptions): boolean {
+    if (typeof target === 'string') {
+      return this.copyTextToClipboard(target);
+    }
+    return this.copyInnerTextToClipboard(target, options);
+  }
+
+  /**
    * Given an HTMLElement, select-highlights it's content and copies it's innerText.
    * Animation-less alternative to copyInnerTextToClipboard
    * NOTE: It only works when accompanied by some user-action eg: click
