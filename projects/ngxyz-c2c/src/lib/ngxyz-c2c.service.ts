@@ -168,7 +168,7 @@ export class NgxyzC2cService {
       left: Math.round(hostPosition.left + hostPosition.width / 2 - options.iconSize / 2),
       top: Math.round(hostPosition.top + hostPosition.height / 2 - options.iconSize),
     };
-    iconGeometry.translateToTop = hostPosition.top - options.iconSize - 15;
+    iconGeometry.translateToTop = hostPosition.top - options.iconSize - 5;
 
     Object.assign(icon.style, {
       position: 'fixed',
