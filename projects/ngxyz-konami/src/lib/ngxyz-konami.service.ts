@@ -33,7 +33,7 @@ export class NgxyzKonamiService {
    * KonamiService includes a built in message-dialog, if showMessages is set to true and a message was provided with the cheat code,
    * it'll be shown for 3 seconds by default, you can pass messageTimeout to override that when registering the cheat.
    */
-  showMessages = false;
+  showMessages = true;
   /**
    * Flag to ignore whether the keydown event's target is form or form-like.
    * By default cheats don't get triggered when a form element like input is event.target/focused, this is to prevent accidental and

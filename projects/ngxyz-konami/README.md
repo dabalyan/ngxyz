@@ -1,13 +1,11 @@
-[![npm version](https://badge.fury.io/js/ngxyz-konami.svg)](https://www.npmjs.com/package/ngxyz-konami)
+# ngXYZ-Konami [![npm version](https://badge.fury.io/js/ngxyz-konami.svg)](https://www.npmjs.com/package/ngxyz-konami)
 
-# ngXYZ-Konami
 ##An Angular Module to add Konami Codes (Cheat Codes / Easter Eggs) to your Angular App
  * Inspired by original Konami Cheat Codes
- * This is a Service which listens to Keyboard.keydown events and triggers a cheat (callback function) if the cheat code matched with
-   what was entered by the user.
  * You can also use it to Show/Hide features in your production website.
  * You can use localstorage in combination and preserve the state of Showing/Hiding that feature, once revealed.
- * For Example, Provided a code like "HELLO" and a Callback function. When the user types "HELLO"
+
+Basically, provided a code like "HELLO" and a Callback function. When the user types "HELLO"
 , the callback function will be called. You can do whatever you want in that callback.
 
 ## Setup
@@ -49,7 +47,6 @@ constructor(private konamiService: NgxyzKonamiService) {
 Simplest usage, a cheat when triggered shows the message in a message-dialog.
 ```typescript
 // register a cheat
-this.konamiService.showMessages = true; // without this the message will not be shown
 this.konamiService.addCheat({code: 'hello', message: 'Say Hello Back'});
 // now click in an empty space, and type 'hello' without the quotes.
 ```
@@ -68,7 +65,7 @@ this.konamiService.configure({
     activationCode: 'ActivateKonamiServiceWhenThisIsTyped', // none of the cheats will be triggered before this
     deactivationCode: 'DeactivateKonamiServiceWhenThisIsTyped',  // none of the cheats will be triggered after this
     logEvents: true, // this will let you know when a cheat gets triggered in the browser console
-    showMessages: true, // by default it's false, but now all subsequent cheats will show the message-dialog once triggered
+    showMessages: true, // by default it's true, all cheats with message will show the message-dialog once triggered
     ignoreFormElements: true, // now cheats will be triggered even if you are filling up a form
     cheats: [{
         code: 'hello',
