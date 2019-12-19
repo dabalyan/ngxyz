@@ -5,7 +5,7 @@
  * You can also use it to Show/Hide features in your production website.
  * You can use localstorage in combination and preserve the state of Showing/Hiding that feature, once revealed.
 
-Basically, provided a code like "HELLO" and a Callback function. When the user types "HELLO"
+Basically, provided a code like "HELLO", and a Callback function. When the user types "HELLO"
 , the callback function will be called. You can do whatever you want in that callback.
 
 ## Setup
@@ -110,27 +110,3 @@ Enable KonamiService manually.
 ```typescript
 this.konamiService.enable();
 ```
-
-# For Contributors / Tinkerers
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.2.14.
-
-## Code scaffolding
-
-Run `ng generate component component-name --project ngxyz-konami` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project ngxyz-konami`.
-> Note: Don't forget to add `--project ngxyz-konami` or else it will be added to the default project in your `angular.json` file. 
-
-## Build
-
-Run `ng build ngxyz-konami` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Publishing
-
-After building your library with `ng build ngxyz-konami`, go to the dist folder `cd dist/ngxyz-konami` and run `npm publish`.
-
-## Running unit tests
-
-Run `ng test ngxyz-konami` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
