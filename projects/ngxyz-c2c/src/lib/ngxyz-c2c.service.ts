@@ -12,7 +12,7 @@ import {Injectable, NgZone} from '@angular/core';
 })
 export class NgxyzC2cService {
   private readonly copyingAttributeIdentifier = 'libNgxyzCopyingToClipboard';
-  private readonly defaultOptions: NgxyzC2cOptions = {animation: true, iconSize: 16, iconColor: '#fff'};
+  private readonly defaultOptions: NgxyzC2cOptions = {animation: true, iconSize: 16, iconColor: '#191a22'};
   private options: NgxyzC2cOptions;
 
   constructor(private ngZone: NgZone) {
@@ -20,7 +20,7 @@ export class NgxyzC2cService {
   }
 
   /**
-   * Optional configuration, which will be used by any subsequent copyInnerTextToClipboard calls.
+   * Optional configuration, which will be used by any subsequent c2c or copyInnerTextToClipboard calls.
    * You can reconfigure it if you want.
    * @param options NgxyzC2cOptions which will be merged with defaultOptions, and will override the matching default options.
    */
@@ -168,7 +168,7 @@ export class NgxyzC2cService {
       left: Math.round(hostPosition.left + hostPosition.width / 2 - options.iconSize / 2),
       top: Math.round(hostPosition.top + hostPosition.height / 2 - options.iconSize),
     };
-    iconGeometry.translateToTop = hostPosition.top - options.iconSize - 5;
+    iconGeometry.translateToTop = hostPosition.top - options.iconSize - 8;
 
     Object.assign(icon.style, {
       position: 'fixed',
