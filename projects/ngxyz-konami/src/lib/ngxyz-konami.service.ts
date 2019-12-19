@@ -37,7 +37,7 @@ export class NgxyzKonamiService {
   /**
    * Flag to ignore whether the keydown event's target is form or form-like.
    * By default cheats don't get triggered when a form element like input is event.target/focused, this is to prevent accidental and
-   * surprise triggers you can disable this behavior setting ignoreFormElements to false.
+   * surprise triggers, you can disable this behavior setting ignoreFormElements to true.
    */
   ignoreFormElements = false;
 
@@ -87,7 +87,7 @@ export class NgxyzKonamiService {
 
   /**
    * Records the code entered by the user, checks it against registered codes, resets it if no code matched,
-   * restarts it if a code partially matched. Aks triggerCheat to trigger the cheat if code matched.
+   * restarts it if a code partially matched. Asks triggerCheat method to trigger the cheat if code matched.
    * @param event KeyboardEvent triggered by keydown
    * @param recheck When a cheat code partially matched with the entered code but then abruptly you try to activate another cheat or enter
    * a key that causes the entered cheat code to not match with any available cheat code anymore, we gotta try to recheck if the new
